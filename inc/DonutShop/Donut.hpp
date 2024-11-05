@@ -40,12 +40,6 @@ public:
     AVAILABLE_FLAVOURS getDonutFlavour() const;
     AVAILABLE_SIZE getDonutSize() const;
     AVAILABLE_PRICES getDonutPrice() const;
-
-    void setDonutFlavour(AVAILABLE_FLAVOURS flavour);
-    void setDonutSize(AVAILABLE_FLAVOURS size);
-    void setDonutPrice(AVAILABLE_PRICES price);
-
-    void PrintDonutInformation() const;
 };
 
 #endif
