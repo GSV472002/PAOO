@@ -16,6 +16,8 @@ public:
     bool SellDonut();
     void DisplayInventory() const;
 
+    bool operator=(const DonutShop &shop);
+
 private:
     string shopName;
     Donut** shopShelves;
