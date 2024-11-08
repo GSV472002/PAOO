@@ -1,11 +1,16 @@
 #include "../inc/DonutShop/DonutShop.hpp"
 #include <iostream>
 
+#define DEBUG_MODE 0
+
 using namespace std;
 
 DonutShop::DonutShop(string shopName, int maxAllowedDonuts)
     : shopName(shopName), maxAllowedDonuts(maxAllowedDonuts), donutsCount(0)
     {
+        #if DEBUG_MDOE == 1
+            cout << "[#DEBUG]: S-a adaugat o noua gogoasa pe raft" << endl;
+        #endif
         shopShelves  = new Donut*[maxAllowedDonuts];
     }
 
@@ -13,6 +18,9 @@ DonutShop::~DonutShop()
 {
     for (int i=0 ; i < donutsCount; ++i)
     {
+        #if DEBUG_MODE == 1
+            cout << "[#DEBUG]: S-a sters raftul de gogosi " << i << endl;
+        #endif
         delete shopShelves[i];
     }
 
