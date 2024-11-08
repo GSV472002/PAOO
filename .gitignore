@@ -156,3 +156,5 @@ vendor/
 # WSL hidden files
 .bash_history
 .wslconfig
+
+DonutShop
