@@ -24,6 +24,7 @@ private:
 
     int shelfSize;
     int donutsCount;
+    int maxAllowedDonuts;
 };
 
 #endif

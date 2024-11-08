@@ -1,5 +1,5 @@
 #include <iostream>
-#include <Donut.hpp>
+#include "../inc/DonutShop/Donut.hpp"
 
 Donut::Donut(AVAILABLE_FLAVOURS flavour, AVAILABLE_SIZE size, AVAILABLE_PRICES price)
      : donutFlavour(flavour), donutSize(size), donutPrice(price) {}

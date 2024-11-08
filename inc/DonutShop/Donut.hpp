@@ -36,6 +36,7 @@ private:
 
 public:
     Donut(AVAILABLE_FLAVOURS flavour, AVAILABLE_SIZE size, AVAILABLE_PRICES price);
+    ~Donut();
 
     AVAILABLE_FLAVOURS getDonutFlavour() const;
     AVAILABLE_SIZE getDonutSize() const;
