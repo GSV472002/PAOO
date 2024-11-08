@@ -44,6 +44,45 @@ bool DonutShop::SellDonut()
     }
 }
 
+string getDonutFlavourName(AVAILABLE_FLAVOURS flavour)
+{
+    if(flavour == CHOCOLATE)
+    {
+        return "Ciocolata";
+    }
+    else if (flavour == VANILLA)
+    {
+        return "Vanilie";
+    }
+    else if (flavour == BLUEBERRY)
+    {
+        return "Afine";
+    }
+    else 
+    {
+        return "Zmeura";
+    }
+}
+
+string getDonutSizeName(AVAILABLE_SIZE size)
+{
+    if (size == SMALL)
+    {
+        return "mica";
+    }
+    else if (size == MEDIUM)
+    {
+        return "medie";
+    }
+    else if (size == BIG){
+        return "mare";
+    }
+    else 
+    {
+        return "gigantica";
+    }
+}
+
 void DonutShop::DisplayInventory() const
 {
     if (donutsCount == 0)
@@ -55,7 +94,7 @@ void DonutShop::DisplayInventory() const
     cout << "[#DONUT_SHOP]: In magazinul " << shopName << "Avem urmatoarele produse pe raft:\n";
     for (int i=0; i < donutsCount; ++i)
     {
-        cout << "[#DONUT_SHOP]: Gogoasa cu aroma de " << shopShelves[i]->getDonutFlavour() << ", dimensiunea " << shopShelves[i]->getDonutSize() << " la pretul: " << shopShelves[i]->getDonutPrice() << "\n"; 
+        cout << "[#DONUT_SHOP]: Gogoasa cu aroma de [" << getDonutFlavourName(shopShelves[i]->getDonutFlavour()) << "], dimensiunea [" << getDonutSizeName(shopShelves[i]->getDonutSize()) << "] la pretul: " << shopShelves[i]->getDonutPrice() << " lei\n"; 
     }   
 }
 
