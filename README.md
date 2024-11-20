@@ -13,3 +13,7 @@ cd PAOO
 - Tema_1: Donut Shop 🍩
 - Tema_2: Ice cream Shop 🍦 
 ```
+🆕 **SAU**
+```bash
+Alege folderul cu tema pe care o doresti direct din main fara a schimba branch-ul.
+```
