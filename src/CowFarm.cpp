@@ -7,7 +7,7 @@ using namespace std;
 CowFarm::CowFarm(const CowFarm& cowFarm)
     : Farm(cowFarm), cowNumbers(cowFarm.cowNumbers), dailyMilkProduction(cowFarm.dailyMilkProduction)
 {
-    cout << "[#COW_FARM_INFO]: Copierea fermei de vaci cu numele " << cowFarm.Name
+    cout << "[#COW_FARM_COPY_CONSTRUCTOR]: Copierea fermei de vaci cu numele " << cowFarm.Name
          << " si adresa " << cowFarm.Address << "." << endl
          << "[#COW_FARM_INFO]: Nr. vaci = " << cowNumbers
          << " vaci si productia zilnica de lapte = " << dailyMilkProduction << " litri." << endl;
@@ -17,10 +17,10 @@ CowFarm::CowFarm(const CowFarm& cowFarm)
 CowFarm::CowFarm(CowFarm&& cowFarm) noexcept
     : Farm(move(cowFarm)), cowNumbers(cowFarm.cowNumbers), dailyMilkProduction(cowFarm.dailyMilkProduction)
 {
-    cout << "[#COW_FARM_INFO]: Mutarea fermei de vaci cu numele " << cowFarm.Name
+    cout << "[#COW_FARM_MOVE_CONSTRUCTOR]: Mutarea fermei de vaci cu numele " << cowFarm.Name
          << " si adresa " << cowFarm.Address << "." << endl;
 
-    // Resetăm starea obiectului sursă
+    // Resetam starea obiectului sursa
     cowFarm.cowNumbers = 0;
     cowFarm.dailyMilkProduction = 0.0;
 }

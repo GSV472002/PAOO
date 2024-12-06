@@ -15,7 +15,7 @@ protected:
 public:
     Farm(const string &Name, const string &Address) : Name(Name), Address(Address)
     {
-        cout << "[#FARM_INFO]: Ferma cu numele " << Name << " si adresa " << Address << " a fost creata." << endl;
+        cout << "[#FARM_CONSTRUCTOR]: Ferma cu numele " << Name << " si adresa " << Address << " a fost creata." << endl;
     }
     //Farm(const Farm&) = delete; // [Dezactivare] copy-constructor
     //Farm(Farm&) = delete; // [Dezactivare] move-constructor
