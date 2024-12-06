@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.0)
 
 # Project name
-project(DonutShop)
+project(CowFarm)
 
 # Define the search path for header files
 include_directories(inc)
@@ -20,8 +20,8 @@ endif()
 
 # Define the executables
 add_executable(${PROJECT_NAME}
-                inc/DonutShop/Donut.hpp
-                inc/DonutShop/DonutShop.hpp
-                src/DonutShop.cpp
-                src/Donut.cpp
+                inc/CowFarm.hpp
+                inc/Farm.hpp
+                src/CowFarm.cpp
+                src/Farm.cpp
                 src/main.cpp)
