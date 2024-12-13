@@ -16,6 +16,7 @@ private:
 
 public:
     Continent(const string& continentName);
+    ~Continent();
     void AddCountry(shared_ptr<Country> country);
     void ShowCountries() const;
     string GetName() const;

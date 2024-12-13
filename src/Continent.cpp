@@ -1,7 +1,20 @@
 #include "../inc/Continent.hpp"
+#include "../config/debug_mode.hpp"
 #include <iostream>
 
-Continent::Continent(const string &continentName) : name(continentName) {}
+using namespace std;
+
+Continent::Continent(const string &continentName) : name(continentName) {
+    #if DEBUG_MODE == 1
+        cout << "[#DEBUG_MODE]: Continent object with name `" << name << "` was created.\n" << endl;
+    #endif
+}
+
+Continent::~Continent() {
+    #if DEBUG_MODE == 1
+        cout << "[#DEBUG_MODE]: Continent object with name `" << name << "` was destroyed.\n" << endl;
+    #endif
+}
 
 void Continent::AddCountry(shared_ptr<Country> country) {
     lock_guard<mutex> lock(mtx);

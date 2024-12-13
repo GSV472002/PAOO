@@ -13,6 +13,7 @@ private:
 
 public:
     Country(const string& countryName);
+    ~Country();
     void ShowCountryInfo() const;
     string GetCountryName() const;
 };
