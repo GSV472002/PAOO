@@ -1,0 +1,159 @@
+# ===========================
+# ** CMake Generated Files **
+# ===========================
+
+# Build directories
+/build/
+/build-*/
+/out-*/
+/bin/
+/lib/
+/Debug/
+/Release/
+/x64/
+/x86/
+
+# CMake intermediate files
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/Makefile
+/*.cmake
+/*.cache
+
+# CTest files
+/CTestTestfile.cmake
+
+# CPack files
+/CPackConfig.cmake
+/CPackSourceConfig.cmake
+
+# ===========================
+# ** Compiled Object Files **
+# ===========================
+
+# Object files
+*.o
+*.obj
+
+# Precompiled headers
+*.gch
+*.pch
+
+# ===========================
+# ** Compiled Libraries **
+# ===========================
+
+# Shared libraries
+*.so
+*.dylib
+*.dll
+
+# Static libraries
+*.a
+*.lib
+
+# ===========================
+# ** Executables **
+# ===========================
+
+# Executable files
+*.exe
+*.out
+*.app
+
+# ===========================
+# ** IDE and Editor Specific **
+# ===========================
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.sln
+
+# CLion
+.idea/
+*.iml
+
+# Qt Creator
+*.pro.user
+*.qbs.user
+
+# Eclipse
+.project
+.cproject
+.settings/
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# JetBrains
+*.idea/
+
+# Vim
+*.swp
+*.swo
+
+# Emacs
+*~
+.\#*
+
+# ===========================
+# ** OS Specific Files **
+# ===========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+*.swp
+*.swo
+.terminal
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===========================
+# ** Other Common Files **
+# ===========================
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Backup files
+*.bak
+*.backup
+
+# Dependency directories
+node_modules/
+vendor/
+
+# ===========================
+# ** Optional: WSL Specific **
+# ===========================
+
+# WSL hidden files
+.bash_history
+.wslconfig
+Country
